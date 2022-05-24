@@ -820,6 +820,8 @@ In this task, you use the Azure Cloud Shell and Azure Command Line Interface (CL
   az ad sp create-for-rbac -n "https://contoso-apps-{SUFFIX}" --role reader --scopes subscriptions/$subscriptionId/resourceGroups/$resourceGroup
   ```
   
+  >**Note**: If you are experiencing the `When using this permission, the backing application of the service principal being created must in the local tenant` error, please verify to have the **Application Administrator** role on Azure AD to fully manage enterprise applications.
+  
 7. Copy the entire output from the command above into a text editor, as you need the `appId`, `name` and `password` values in upcoming tasks. The output should be similar to:
 
    ```json
