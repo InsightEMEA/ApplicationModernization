@@ -35,6 +35,10 @@ function Add-SqlFirewallRule {
 
 Add-SqlFirewallRule
 
+# Download and install .NET Framework 4.8 as pre-requirement for DMA
+Invoke-WebRequest 'https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe' -OutFile 'C:\ndp48-x86-x64-allos-enu.exe'
+Start-Process -file 'C:\ndp48-x86-x64-allos-enu.exe' -arg '/q /norestart /log C:\dnet_install.txt' -passthru | wait-process
+
 # Download and install Data Mirgation Assistant
 Invoke-WebRequest 'https://download.microsoft.com/download/C/6/3/C63D8695-CEF2-43C3-AF0A-4989507E429B/DataMigrationAssistant.msi' -OutFile 'C:\DataMigrationAssistant.msi'
 Start-Process -file 'C:\DataMigrationAssistant.msi' -arg '/qn /l*v C:\dma_install.txt' -passthru | wait-process
