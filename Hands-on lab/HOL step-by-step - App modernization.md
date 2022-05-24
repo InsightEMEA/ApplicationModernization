@@ -235,7 +235,7 @@ Contoso would like an assessment to see what potential issues they might need to
 
 > **Note**: The Database Migration Assistant has already been installed on your SqlServer2008 VM. It can also be downloaded from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595).
 
-> **Note**: Shall there be any problem while finding the Database Migration Assistant on the SqlServer2008 VM, please make sure that the [.NET Framework Runtime 4.8] (https://support.microsoft.com/en-gb/topic/microsoft-net-framework-4-8-offline-installer-for-windows-9d23f658-3b97-68ab-d013-aa3c3e7495e0) is installed. The latest version of Database Migration Assistant could require it to be correctly installed.
+> **Note**: Shall there be any problem while finding the Database Migration Assistant on the SqlServer2008 VM, please make sure that the [.NET Framework Runtime 4.8](https://support.microsoft.com/en-gb/topic/microsoft-net-framework-4-8-offline-installer-for-windows-9d23f658-3b97-68ab-d013-aa3c3e7495e0) is installed. The latest version of Database Migration Assistant could require it to be correctly installed.
 
 1. On the SqlServer2008 VM, launch DMA from the Windows Start menu by typing "data migration" into the search bar, and then selecting **Microsoft Data Migration Assistant** in the search results.
 
